@@ -11,8 +11,8 @@ const listadoImg = [
   { "Category": "Ropa", "Sub Category": "Pantalones", "Product": "https://i.postimg.cc/0QtPwP0H/Pantalon3.jpg","Description":"Pantalon Rojo", "Price":150  },
 
   { "Category": "Ropa", "Sub Category": "Ropa Interior", "Product": "https://i.postimg.cc/hjGqgNR8/Ropa-Interior1.jpg","Description":"Boxer", "Price":50  },
-  { "Category": "Ropa", "Sub Category": "Ropa Interior", "Product": "https://i.postimg.cc/G2SnpzbW/Ropa-Interior2.jpg","Description":"Bombacha", "Price":50  },
-  { "Category": "Ropa", "Sub Category": "Ropa Interior", "Product": "https://i.postimg.cc/tJZQnPTY/Ropa-Interior3.jpg","Description":"Bombacha", "Price":50  },
+  { "Category": "Ropa", "Sub Category": "Ropa Interior", "Product": "https://i.postimg.cc/G2SnpzbW/Ropa-Interior2.jpg","Description":"Bikini", "Price":50  },
+  { "Category": "Ropa", "Sub Category": "Ropa Interior", "Product": "https://i.postimg.cc/tJZQnPTY/Ropa-Interior3.jpg","Description":"Bikini", "Price":50  },
 
   { "Category": "bijouterie", "Sub Category": "Cadenas", "Product": "https://i.postimg.cc/m2KZjZfv/Cadena1.jpg","Description":"Cadena", "Price":550  },
   { "Category": "bijouterie", "Sub Category": "Cadenas", "Product": "https://i.postimg.cc/7Y5YSGc1/Cadena2.jpg","Description":"Cadena", "Price":650  },
