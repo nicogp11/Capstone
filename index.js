@@ -2,7 +2,7 @@
 
 const listadoImg = [
   { "Category": "Ropa", "Sub Category": "Remeras", "Product": "https://i.postimg.cc/XYM3F293/Remera1.jpg", "Description":"Remera Roja", "Price":100 },
-  { "Category": "Ropa", "Sub Category": "Remeras", "Product": "https://i.postimg.cc/g2vpKvKh/Remera2.jpg", "Price":100 },
+  { "Category": "Ropa", "Sub Category": "Remeras", "Product": "https://i.postimg.cc/g2vpKvKh/Remera2.jpg", "Description":"Remera Naranja","Price":100 },
   { "Category": "Ropa", "Sub Category": "Remeras", "Product": "https://i.postimg.cc/JhMLYGT2/Remera3.jpg", "Description":"Remera Rosada", "Price":100  },
   { "Category": "Ropa", "Sub Category": "Remeras", "Product": "https://i.postimg.cc/yNjzMstY/Remera4.jpg", "Description":"Remera Verde", "Price":100  },
 
