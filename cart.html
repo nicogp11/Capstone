@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8880b7b5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Ventas Gabriela</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon2.png">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">≡</button>
+        <div class="logo"><a href="index.html">Gabriela <img src="https://i.postimg.cc/QM38L6MS/favicon2.png" alt="Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/categories.html">Categorias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="/cart.html">-<i class="fa-solid fa-cart-shopping"></i>-</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main onclick="toggleMenuQuit()">
+        <section id="home">
+            <h1>Gabriela</h1>
+        </section>
+
+        <section id="cart">
+            <div class="grid">
+            </div>
+        </section>
+        <section >
+            <h2 class="costoTotal" id="cost">Costo Total $</h2>
+        </section>
+    </main>
+    <footer>
+        <section id="contacto">
+            <h2>Contacto:</h2>
+            <p>Contáctanos para más información. cel 099999999</p>
+            <a href="#home">Jump to the Top</a>
+        </section>
+    </footer>
+    <!-- Scripts -->
+    <script src="cart.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

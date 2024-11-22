@@ -1,0 +1,376 @@
+/*  CSS HEX
+--raisin-black: #16161dff;
+--moonstone: #2eb3cbff;
+--persian-pink: #e280b8ff;
+--harvest-gold: #e1a819ff;
+--burnt-sienna: #CA795Aff;
+*/
+
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'ascetica_light_rounded';
+  font-size:x-large;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  background-color: #CA795Aff;
+}
+
+
+
+/*BARRA DE NAVEGACIÓN*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2EB3CBff;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid #FFFFFFff;
+  position: fixed;
+  /* Fija la barra de navegación en la parte superior */
+  width: 100%;
+  /* Ocupa el ancho completo */
+  z-index: 1000;
+  /* Asegura que esté sobre otros elementos */
+}
+
+.nav-links {
+  display: none;
+  /* Oculto por defecto */
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: #2EB3CBff;
+  padding: 0rem;
+  list-style: none;
+  z-index: 10;
+  border-right: 2px solid #FFFFFFff;
+}
+
+.nav-links.active {
+  display: flex;/* Mostrar menú cuando está activo */
+}
+
+
+.navbar .logo {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #CA795Aff;
+  border-top: 3px solid #FFFFFFff;
+  padding: 3px;
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 3%;
+}
+.logo img{
+  border: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover{
+  transform: rotate(360deg);
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.nav-links li {
+  display: flex;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center;/* Centrar el contenido verticalmente */
+  font-weight: bold;
+  border-top: 3px solid #FFFFFFff;
+  
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 1%;
+}
+
+.nav-links li:nth-child(4n){
+  border-bottom:3px solid #FFFFFFff; ;
+}
+
+.nav-links a {
+  display: flex; /* Permite que el enlace ocupe todo el espacio del contenedor */
+  justify-content: center; /* Centra el texto dentro del enlace */
+  align-items: center; /* Centra el texto verticalmente */
+  width: 100%; /* Hace que el enlace ocupe todo el ancho del elemento <li> */
+  height: 100%; /* Hace que el enlace ocupe todo el alto del elemento <li> */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li:hover {
+  background-color: #CA795Aff;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.menu-toggle {
+  display: block;
+  /* Mostrar el botón de menú por defecto */
+  font-size: 1.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-top: 3px solid #FFFFFFff;
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 5%;
+  padding: 4px;
+}
+
+
+
+
+main {
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0rem 3rem;
+  border: 2px solid #FFFFFFff;
+  border-top: none;
+}
+
+.grid {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 100%
+}
+
+.gridCat {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 100%
+}
+
+.itemCat {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+
+.item {
+  position: relative; /* Necesario para que el botón se posicione relativo a este contenedor */
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  border-bottom:2px solid #FFFFFFff ;
+  align-items: center;
+  justify-content: left;
+}
+
+
+
+.tituloItem{
+  margin-left: 15%;
+}
+.tituloCat{
+  font-size:300%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+.precioItem{
+  position: absolute; /* Permite posicionarlo dentro del contenedor */
+  right: 10%; /* Distancia desde el lado derecho */
+  bottom: 43%; /* Distancia desde la parte inferior */
+}
+
+.item button{
+  background-color: #CA795Aff; 
+  width: 3rem;
+  height: 2rem;
+  border-top: 3px solid #FFFFFFff;
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 10%;
+  border-bottom: none;
+  border-right: none;
+  margin-left: 1rem;
+  position: absolute; /* Permite posicionarlo dentro del contenedor */
+    bottom: 10px; /* Distancia desde la parte inferior */
+    right: 10px; /* Distancia desde el lado derecho */
+}
+
+.item button:hover {
+
+  background-color: #2EB3CBff;
+}
+
+.costoTotal{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8%;
+}
+
+/*IMAGENES*/
+
+img {
+  width: 50%;
+ 
+  border-top: 3px solid #FFFFFFff;
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 5%;
+}
+
+.imgcart {
+  width: 25%;
+ 
+  border-top: 3px solid #FFFFFFff;
+  border-left: 3px solid #FFFFFFff;
+  border-radius: 5%;
+}
+
+
+img:hover {
+
+  transform: scale(1.10);
+  transition: transform 0.5s;
+}
+
+img:not(:hover) {
+
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 2rem 3rem;
+  margin: 0rem 3rem;
+  border: 2px solid #FFFFFFff;
+  border-top: none;
+
+}
+
+
+
+
+@media (min-width: 772px) {
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+    /* Ocultar el botón de menú en pantallas grandes */
+  }
+
+  .nav-links {
+    display: flex;
+    /* Mostrar el menú en formato horizontal */
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    height: auto;
+    border-right: none;
+  }
+
+  .nav-links li {
+    margin-left: 1rem;
+    border-radius: 5%;
+  }
+
+  .nav-links li:nth-child(4n){
+    border-bottom: none ;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid figure:nth-child(9) {
+    grid-column: span 2;
+    height: 15rem;
+  }
+
+  img {
+    height: 85%;
+  }
+
+}
+
+
+
+
+@media (min-width: 992px) {
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid figure:nth-child(3n) {
+    grid-column: span 2;
+    height: 25rem;
+  }
+
+  .itemCat {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+      scroll-behavior: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #000000;
+      color: #fff;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+  }
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-links a {
+    color: #000;
+  }
+
+
+}
