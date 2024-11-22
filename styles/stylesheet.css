@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'ascetica_light_rounded';
-    src: url('./fonts/ascetica_light_rounded-webfont.woff2') format('woff2'),
-         url('./fonts/ascetica_light_rounded-webfont.woff') format('woff');
+    src: url('../fonts/ascetica_light_rounded-webfont.woff2') format('woff2'),
+         url('../fonts/ascetica_light_rounded-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
